@@ -1,0 +1,40 @@
+.titulo{
+    background-color: aqua;
+}
+
+
+.titulo:hover{
+    background-color: darkgreen;
+    color: white;   
+    border-radius: 50px;
+
+}
+
+input:focus{
+    border: 20px solid black;
+}
+
+button:active{
+    background-color: salmon;
+}
+
+.input:required{
+    border: 20px solid red;
+}
+
+.accordion-button{
+    background-color: lightseagreen;
+}
+
+.footer{
+    background-color: lightgray;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.clasefuriosa{
+    background-color: red;
+}
