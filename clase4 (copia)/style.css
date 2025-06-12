@@ -1,0 +1,118 @@
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: aliceblue
+    
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    grid-template-rows: 80px 50px auto 60px;
+    grid-template-areas:
+        "header header"
+        "nav nav"
+        "main sidebar"
+        "footer footer";
+        gap: 10px;
+        height: 100vh;
+        padding: 10px;
+}
+
+.item1{
+grid-area: header;
+background-color: aliceblue;
+color: white;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+.item2{
+    grid-area: nav;
+    background-color: skyblue;
+   display: flex;
+   justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+
+}
+
+.item2 button{
+    background-color: aliceblue;
+    color: #2196f3;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+
+
+    border-radius: 5px;
+}
+
+.item2 button:hover{
+    background-color: #197602;
+    color: aliceblue;
+
+}
+
+
+.item3{
+    grid-area: main;
+    background-color: aliceblue;
+    padding: 20px;
+    box-shadow: 0 0 10px black;
+    
+}
+
+.item4{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin-top: 20px;
+}
+
+form label{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+form text area{
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid white;
+    border-radius: 5px;
+    
+}
+
+form.input[type=submit]{
+    background-color: green;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+
+.item4{
+    grid-area: sidebar;
+    background-color: #ff9800;
+    color: white;
+    padding: 20px;
+}
+
+.item5{
+    grid-area: footer;
+    background-color: #2196f3;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
