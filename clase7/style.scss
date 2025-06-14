@@ -33,3 +33,11 @@ body {
 .btn-primary {
   @include boton;
 }
+
+@function calcular-ancho($col) {
+  @return $col * 100;
+}
+
+.container {
+  width: calcular-ancho(5);
+}
