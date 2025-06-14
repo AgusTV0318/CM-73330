@@ -1,7 +1,35 @@
 
 $primary-color: #3498db;
+$secondary-color: #2ecc71;
+$font-family: 'Arial', sans-serif;
 
 
 body {
   background-color: $primary-color;
+}
+ 
+.navbar {
+  background-color: $secondary-color;
+
+  ul{
+    list-style: none;
+
+    li{
+      display: inline-block;
+      color: red;
+    }
+  }
+}
+
+
+@mixin boton {
+  background-color: $primary-color;
+  font-size: large;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+
+.btn-primary {
+  @include boton;
 }
